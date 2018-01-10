@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PageControlView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    PageControlView *pageControl = [[PageControlView alloc] initWithFrame:CGRectMake(50, 200, 300, 20)];
+    [self.view addSubview:pageControl];
+    [pageControl setUI:5];
 }
 
 
